@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body{
+  background-image: url('./images/bg-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  font-family: 'Open Sans', sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container{
+  width: 960px;
+  margin: auto;
+  max-width: 100%;
+}
+
+img{
+  max-width: 100%;
+}
+.grid__layout{
+  display: grid;
+  grid-template-columns:8fr 6fr;
+  column-gap: 1.2rem;
+  margin-top: 20px;
+}
+
+h1{
+   
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    font-family: poppins ;
+    color: white;
+    font-weight: 400px;
+
+}
+
+p{
+    color: white;
+    opacity: 0.8;
+}
+
+button{
+   padding: 16px 54px;
+   font-size: 1.4rem;
+   border-radius: 50px;
+   outline: none;
+    border: none;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 10px 14px 14px rgba(0, 0, 0, 0.2);
+
+
+
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul li{
+   color: white;
+}
+
+ul a {
+    border: 2px solid white;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 100%;
+  }
+  .grid__layout{
+    grid-template-columns: 1fr;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  button{
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul li{
+    color: white;
+  }
+  ul a {
+    border: 2px solid white;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin-left: 14px;
+  }
+}
